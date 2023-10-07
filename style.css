@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&display=swap');
+
+:root {
+    --orange-700: #ce7434;
+    /* Substitua com o valor exato de $orange-700 do Bootstrap */
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    
+}
+
+input[type=checkbox] {
+    border: 2px solid var(--marrom-claro);
+    box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+    background-color: var(--orange-700);
+    /* Cor de fundo quando marcado ou focado */
+    border-color: var(--orange-700);
+    box-shadow: none;
+    outline: none;
+    color: var(--marrom-claro);
+    /* Cor do texto quando focado ou marcado */
+}
+
+/* Adicione esta regra para remover o foco quando o switch estiver desativado */
+input[type="checkbox"]:not(:checked) {
+    outline: none;
+}
+
+
+/*    banner 1    */
+
+.banner-1 {
+    background-image: url(assets/banner-1.png);
+}
+
+.banner-2 {
+    background-image: url(./assets/banner-2.png);
+}
+
+.banner-3 {
+    background-image: url(./assets/banner-3.png);
+}
+
+.banners {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banners-titulo {
+    --bs-bg-opacity: .2;
+}
+
+.botao-padrao {
+    background-color: #ce7434;
+    color: black;
+}
+
+.botao-padrao-l:hover {
+    background-color: #ce7434be;
+}
+
+.input-range::-webkit-slider-thumb {
+    background-color: var(--orange-700);
+    /* Cor de fundo quando marcado ou focado */
+    border-color: var(--orange-700);
+    box-shadow: none;
+    outline: none;
+    color: var(--marrom-claro);
+    /* Cor do texto quando focado ou marcado */
+}
+
+footer {
+    background-color: #ce7434;
+}
+
+[data-bs-theme="dark"] {
+    color: white;
+    .nav-link, .card-body, .offcanvas{
+        --bs-nav-link-color: white;
+        --bs-card-color:white;
+        --bs-offcanvas-color: white;
+    }
+}
